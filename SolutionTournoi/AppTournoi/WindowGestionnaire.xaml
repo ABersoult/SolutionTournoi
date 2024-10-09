@@ -1,0 +1,19 @@
+﻿<Window x:Class="AppTournoi.WindowGestionnaire"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppTournoi"
+        mc:Ignorable="d"
+        Title="WindowGestionnaire" Height="252" Width="343">
+    <Grid Background="#FF93E08F">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Loging :" HorizontalAlignment="Left" Margin="40,62,0,0" VerticalAlignment="Top"/>
+        <Label Content="Mot de passe :" HorizontalAlignment="Left" Margin="40,125,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.997,8.507"/>
+        <TextBox x:Name="TBlog" HorizontalAlignment="Left" Margin="198,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="BTValider" Content="Valider" Margin="198,188,0,0" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" Click="BTValider_Click"/>
+        <PasswordBox x:Name="TBPassword" HorizontalAlignment="Left" Margin="198,133,0,0" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>

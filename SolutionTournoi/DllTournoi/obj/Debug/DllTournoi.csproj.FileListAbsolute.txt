@@ -1,0 +1,11 @@
+C:\Users\arthu\OneDrive\Documents\CAEN\BTS\Deuxième année\SolutionTournoi\DllTournoi\bin\Debug\DllTournoi.dll
+C:\Users\arthu\OneDrive\Documents\CAEN\BTS\Deuxième année\SolutionTournoi\DllTournoi\bin\Debug\DllTournoi.pdb
+C:\Users\arthu\OneDrive\Documents\CAEN\BTS\Deuxième année\SolutionTournoi\DllTournoi\bin\Debug\Devart.Data.dll
+C:\Users\arthu\OneDrive\Documents\CAEN\BTS\Deuxième année\SolutionTournoi\DllTournoi\bin\Debug\Devart.Data.Linq.dll
+C:\Users\arthu\OneDrive\Documents\CAEN\BTS\Deuxième année\SolutionTournoi\DllTournoi\bin\Debug\Devart.Data.MySql.dll
+C:\Users\arthu\OneDrive\Documents\CAEN\BTS\Deuxième année\SolutionTournoi\DllTournoi\bin\Debug\Devart.Data.MySql.Linq.dll
+C:\Users\arthu\OneDrive\Documents\CAEN\BTS\Deuxième année\SolutionTournoi\DllTournoi\obj\Debug\DllTournoi.csproj.AssemblyReference.cache
+C:\Users\arthu\OneDrive\Documents\CAEN\BTS\Deuxième année\SolutionTournoi\DllTournoi\obj\Debug\DllTournoi.csproj.CoreCompileInputs.cache
+C:\Users\arthu\OneDrive\Documents\CAEN\BTS\Deuxième année\SolutionTournoi\DllTournoi\obj\Debug\DllTournoi.csproj.Up2Date
+C:\Users\arthu\OneDrive\Documents\CAEN\BTS\Deuxième année\SolutionTournoi\DllTournoi\obj\Debug\DllTournoi.dll
+C:\Users\arthu\OneDrive\Documents\CAEN\BTS\Deuxième année\SolutionTournoi\DllTournoi\obj\Debug\DllTournoi.pdb

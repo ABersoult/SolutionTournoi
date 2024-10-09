@@ -1,0 +1,178 @@
+﻿<Window x:Class="AppTournoi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppTournoi"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FFBBBBBB">
+        <DataGrid x:Name="DGTournois" AutoGenerateColumns="False" Margin="323,70,15,34" Background="#FF8EB4AB">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Nom">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Label Content="{Binding Nom}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="Prenom">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Label Content="{Binding Prenom}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <GroupBox x:Name="GBInfoParticipant" Header="Information du participant" Margin="318,71,15,34" RenderTransformOrigin="0.5,0.5" Background="#FFAAE6F3">
+            <Grid Margin="26,0,-2,0" Height="273">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="58*"/>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="51*"/>
+                    <RowDefinition Height="56*"/>
+                    <RowDefinition Height="37*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="83*"/>
+                    <ColumnDefinition Width="151*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Nom : " HorizontalAlignment="Left" Margin="28,0,0,0" VerticalAlignment="Center" Width="78" Height="27" RenderTransformOrigin="0.5,0.5">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0.563"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Content="Prénom : " HorizontalAlignment="Left" Margin="26,12,0,0" VerticalAlignment="Top" Width="78" Height="27" RenderTransformOrigin="0.5,0.5" Grid.Row="1"/>
+                <Label Content="Date de naissance  :" HorizontalAlignment="Left" Margin="26,0,0,0" VerticalAlignment="Center" Width="133" Height="27" RenderTransformOrigin="0.5,0.5" Grid.Row="2" Grid.ColumnSpan="2"/>
+                <Label Content="Sport :" HorizontalAlignment="Left" Margin="26,6,0,0" VerticalAlignment="Top" Width="78" Height="27" RenderTransformOrigin="0.5,0.5" Grid.Row="3"/>
+                <Label Content="Tournoi :" HorizontalAlignment="Left" Margin="26,0,0,0" VerticalAlignment="Center" Width="78" Height="27" RenderTransformOrigin="0.5,0.5" Grid.Row="4"/>
+                <TextBox x:Name="TBNom" TextWrapping="Wrap" Margin="55,22,101,10" RenderTransformOrigin="0.5,0.5" Grid.Column="1">
+                    <TextBox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0.194"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBox.RenderTransform>
+                </TextBox>
+                <TextBox x:Name="TBPrenom" TextWrapping="Wrap" Margin="56,22,99,10" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.Row="1">
+                    <TextBox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0.194"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBox.RenderTransform>
+                </TextBox>
+                <TextBox x:Name="TBDateNaissance" TextWrapping="Wrap" Margin="55,14,101,18" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.Row="2">
+                    <TextBox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0.194"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBox.RenderTransform>
+                </TextBox>
+                <TextBox x:Name="TBSport" TextWrapping="Wrap" Margin="55,14,101,7" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.Row="3">
+                    <TextBox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0.194"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBox.RenderTransform>
+                </TextBox>
+                <TextBox x:Name="TBTournoi" TextWrapping="Wrap" Margin="55,16,101,11" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.Row="4">
+                    <TextBox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0.194"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBox.RenderTransform>
+                </TextBox>
+                <Image x:Name="imgJoueur" Grid.Column="1" HorizontalAlignment="Left" Height="85" Margin="178,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="95" Grid.RowSpan="2"/>
+
+            </Grid>
+        </GroupBox>
+        <Menu Margin="0,0,0,393" FontSize="10">
+            <MenuItem x:Name="BConnexionBdd" Header="Connexion Bdd" Click="BConnexionBdd_Click"/>
+            <MenuItem x:Name="BGestionnaire" Header="Gestionnaire" Click="BGestionnaire_Click"/>
+            <MenuItem x:Name="BGestionSports" Header="Gestion sports" Click="BGestionSports_Click" IsEnabled="False"/>
+            <MenuItem x:Name="BGestionTournois" Header="Gestion tournois" Click="BGestionTournois_Click" IsEnabled="False"/>
+            <MenuItem x:Name="BGestionParticipants" Header="Gestion participants" Click="BGestionParticipants_Click" IsEnabled="False"/>
+            <MenuItem x:Name="BTabParticipants" Header="Tab participants" Click="BTabParticipants_Click" IsEnabled="False"/>
+            <MenuItem x:Name="TBSports" Header="Tab sports" Click="TBSports_Click" IsEnabled="False">
+                <Image Height="100" Width="100"/>
+            </MenuItem>
+            <MenuItem x:Name="TBTournois" Header="Tab tournois" Click="TBTournois_Click" IsEnabled="False"/>
+            <MenuItem x:Name="BSettings" Header="Settings" Click="BSettings_Click"/>
+        </Menu>
+
+
+
+        <ListView x:Name="LVParticipants" Margin="0,70,494,42" Background="#FFB1F1FF" SelectionChanged="LVParticipants_SelectionChanged">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock>
+                    <Run Text="{Binding Nom}" FontWeight="Bold"/>
+                    <Run Text="  "/>
+                    <Run Text="{Binding Prenom}"/>
+                    <Run Text="  "/>
+                    <Run Text="{Binding Intitule}"/>
+                        </TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView x:Name="LVTournois" Margin="0,70,494,42" Background="#FFB1F1FF" SelectionChanged="LVTournois_SelectionChanged">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock><Run Text="{Binding Nom}" FontWeight="Bold"/><Run Text=" "/><Run Text="  "/><Run Text=" "/><Run Text="{Binding Prenom}"/><Run Text=" "/><Run Text="  "/><Run Text=" "/><Run Text="{Binding Intitule}"/></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <DataGrid x:Name="DGSports" AutoGenerateColumns="False" Margin="323,70,15,34" Background="#FF8EB4AB">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Nom">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Label Content="{Binding Nom}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="Prenom">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Label Content="{Binding Prenom}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <ListView x:Name="LVSports" Margin="0,70,494,42" Background="#FFB1F1FF" SelectionChanged="LVSports_SelectionChanged">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock><Run Text="{Binding Nom}" FontWeight="Bold"/><Run Text=" "/><Run Text="  "/><Run Text=" "/><Run Text="{Binding Prenom}"/><Run Text=" "/><Run Text="  "/><Run Text=" "/><Run Text="{Binding Intitule}"/></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Window>

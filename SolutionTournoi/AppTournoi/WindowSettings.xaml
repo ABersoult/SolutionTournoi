@@ -1,0 +1,23 @@
+﻿<Window x:Class="AppTournoi.WindowSettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppTournoi"
+        mc:Ignorable="d"
+        Title="WindowSettings" Height="286" Width="461">
+    <Grid Background="#FF00973A">
+        <Label Content="Adresse IPv4 du serveur :" HorizontalAlignment="Left" Margin="56,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.468,-0.723"/>
+        <Label Content="Port d'écoute du service bdd :" HorizontalAlignment="Left" Margin="56,54,0,0" VerticalAlignment="Top"/>
+        <Label Content="Mot de passe" HorizontalAlignment="Left" Margin="56,116,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nom du serveur" HorizontalAlignment="Left" Margin="56,147,0,0" VerticalAlignment="Top"/>
+        <Label Content="Login" HorizontalAlignment="Left" Margin="56,85,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TIPv4" HorizontalAlignment="Left" Margin="251,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TPort" HorizontalAlignment="Left" Margin="251,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TLogin" HorizontalAlignment="Left" Margin="251,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TNomServeur" HorizontalAlignment="Left" Margin="251,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="BSave" Content="Enregistrer" HorizontalAlignment="Left" Margin="251,196,0,0" VerticalAlignment="Top" Width="120" Click="BSave_Click"/>
+        <PasswordBox x:Name="TMdp" HorizontalAlignment="Left" Margin="251,120,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

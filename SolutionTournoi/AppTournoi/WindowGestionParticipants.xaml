@@ -1,0 +1,33 @@
+﻿<Window x:Class="AppTournoi.WindowGestionParticipants"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppTournoi"
+        mc:Ignorable="d"
+        Title="GestionParticipants" Height="292" Width="421">
+    <Grid Background="#FFA0FF9B" Margin="0,0,0,-6">
+        <ListView x:Name="LstwGestionParticipants" Margin="0,0,269,0" Background="#FF43B24E" Height="262" VerticalAlignment="Center">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock>
+                            <Run Text="{Binding Nom}"/>
+                            <Run Text="  "/>
+                            <Run Text="{Binding Prenom}"/>
+                            <Run Text="  "/>
+                            <Run Text="{Binding DateNaissance}"/>
+                        </TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="ButtonAdd" Content="Ajouter" HorizontalAlignment="Left" Margin="173,84,0,0" VerticalAlignment="Top" Height="32" Width="93" Click="ButtonAdd_Click"/>
+        <Button x:Name="ButtonSupp" Content="Supprimer" HorizontalAlignment="Left" Margin="304,84,0,0" VerticalAlignment="Top" Height="32" Width="93" Click="ButtonSupp_Click"/>
+        <Button x:Name="ButtonMod" Content="Modifier" HorizontalAlignment="Left" Margin="242,179,0,0" VerticalAlignment="Top" IsEnabled="False" Height="38" Width="97"/>
+        <Label Content="Intitule" HorizontalAlignment="Center" Margin="0,41,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtIntituleParticipant" HorizontalAlignment="Left" Margin="290,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
+
